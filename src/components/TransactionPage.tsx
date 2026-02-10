@@ -1,4 +1,5 @@
 import Input from "./ui/Input";
+import TransactionsDetails from "./TransactionsDetails";
 
 import { useState } from "react";
 
@@ -21,10 +22,10 @@ const TransactionsPage = () => {
   };
 
   return (
-    <div className="min-h-[calc(100dvh-56px)] flex flex-col relative items-center gap-5 pt-10 ">
+    <div className="min-h-[calc(100dvh-56px)] flex flex-col relative items-center gap-5 pt-10">
       <div className="font-bold">
         <h1 className="text-xl text-brand-800">
-          Lydia <span className="text-brand-500">paiement history</span>
+          Lydia <span className="text-brand-500">payment history</span>
         </h1>
       </div>
       <section className="sticky w-80 top-0">
@@ -40,7 +41,9 @@ const TransactionsPage = () => {
           />
         </div>
       </section>
-      <section className="min-h-300 bg-brand-500"></section>
+      <section className="w-dvw pl-3 pr-3">
+        <TransactionsDetails />
+      </section>
     </div>
   );
 };

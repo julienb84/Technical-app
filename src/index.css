@@ -47,7 +47,6 @@
   padding: 0 10px;
 }
 @utility wrapper2 {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 100dvw;
   padding: 0 10px;
 }
