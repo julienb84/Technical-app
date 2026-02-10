@@ -5,10 +5,9 @@ const TransactionsDetails = () => {
     <div className="flex flex-col mt-10">
       <p className="text-brand-800">10 février</p>
       <section className="bg-brand-100/50 rounded-s flex flex-col gap-2.5 pt-2">
-        <details className="group max-w-full border border-transparent open:border-brand-800/50 open:bg-white p-2.5 rounded-xl">
+        <details className="group max-w-full border border-transparent open:border-brand-800/50 open:bg-white open:shadow-md open:duration-700 p-2.5 rounded-xl not-open:hover:shadow-lg/20">
           <summary className="text-brand-800 text-s flex items-center">
-            <FaChevronRight className="group-open:hidden" />
-            <FaChevronDown className="hidden group-open:block" />
+            <FaChevronRight className="group-open:rotate-90 transition duration-200" />
             <div className="w-full flex justify-between">
               <span className="ml-1 line-clamp-1 w-36">
                 Pathé Boulogne-Billancourt passage
@@ -23,7 +22,7 @@ const TransactionsDetails = () => {
             </ul>
           </div>
         </details>
-        <details className="group max-w-full border border-transparent open:border-brand-800/50 open:bg-white p-2.5 rounded-xl">
+        <details className="group max-w-full border border-transparent open:border-brand-800/50 open:bg-white open:shadow-md p-2.5 rounded-xl not-open:hover:shadow-lg/20">
           <summary className="text-brand-800 text-s flex items-center">
             <FaChevronRight className="group-open:hidden" />
             <FaChevronDown className="hidden group-open:block" />
