@@ -1,4 +1,6 @@
-import { FaChevronRight, FaChevronDown } from "react-icons/fa";
+// UI //
+import { FaChevronRight } from "react-icons/fa";
+import Badge from "./ui/Badge";
 
 const TransactionsDetails = () => {
   return (
@@ -53,9 +55,7 @@ const TransactionsDetails = () => {
                 </p>
               </div>
             </section>
-            <div className="bg-completed-500/70 w-32 h-8 border border-completed-600 text-white font-medium rounded-2xl flex justify-center items-center">
-              <span>Completed</span>
-            </div>
+            <Badge variant="completed" status="completed" />
           </div>
         </details>
 
