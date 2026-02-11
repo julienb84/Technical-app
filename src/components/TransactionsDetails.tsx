@@ -7,9 +7,10 @@ import type { Transaction } from "../types/transaction";
 
 interface TransactionsDetailsProps {
   data: Transaction[];
+  search: string;
 }
 
-const TransactionsDetails = ({ data }: TransactionsDetailsProps) => {
+const TransactionsDetails = ({ data, search }: TransactionsDetailsProps) => {
   return (
     <div className="flex flex-col mt-10">
       <p className="text-brand-800">10 février</p>
@@ -17,7 +18,10 @@ const TransactionsDetails = ({ data }: TransactionsDetailsProps) => {
       <section className="rounded-s flex flex-col gap-4 pt-3">
         {data.map((element) => {
           return (
-            <details className="group max-w-full bg-brand-200/40 border border-transparent open:border-brand-800/50 open:bg-white open:shadow-md open:duration-500 p-2.5 rounded-xl not-open:hover:shadow-lg/20">
+            <details
+              key={element.paymentId}
+              className="group max-w-full bg-brand-200/40 border border-transparent open:border-brand-800/50 open:bg-white open:shadow-md open:duration-500 p-2.5 rounded-xl not-open:hover:shadow-lg/20"
+            >
               <summary className="text-brand-800 text-s flex items-center">
                 <FaChevronRight className="group-open:rotate-90 transition duration-100" />
                 <div className="w-full flex justify-between">

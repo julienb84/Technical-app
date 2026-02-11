@@ -44,7 +44,7 @@ const TransactionsPage = () => {
         </div>
       </section>
       <section className="w-dvw pl-3 pr-3">
-        <TransactionsDetails data={typedTransactions} />
+        <TransactionsDetails data={typedTransactions} search={search} />
       </section>
     </div>
   );
