@@ -1,20 +1,22 @@
+// UI //
 import Input from "./ui/Input";
+import { FiSearch } from "react-icons/fi";
+
+// COMPONENTS //
 import TransactionsDetails from "./TransactionsDetails";
 
 import { useState } from "react";
 
-// icons //
-import { FiSearch } from "react-icons/fi";
+// DATA //
+import transactionsTab from "../data/transactions.json";
 
-//   type,
-//   placeholder,
-//   name,
-//   value,
-//   onChange,
-//   className,
+// TYPES //
+import type { Transaction } from "../types/transaction";
 
 const TransactionsPage = () => {
   const [search, setSearch] = useState("");
+
+  const typedTransactions = transactionsTab as Transaction[];
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value: string = event.target.value;
@@ -42,7 +44,7 @@ const TransactionsPage = () => {
         </div>
       </section>
       <section className="w-dvw pl-3 pr-3">
-        <TransactionsDetails />
+        <TransactionsDetails data={typedTransactions} />
       </section>
     </div>
   );
