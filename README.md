@@ -6,7 +6,7 @@ Projet déployé sur [Netlify](https://www.netlify.com/) et consultable à l'adr
 
 ## 📌 Description
 
-Création d'une application SPA pour Single Page Application permettant la recherche d'une transaction spécifique via son label.
+Création d'une application SPA, pour Single Page Application, permettant la recherche d'une transaction spécifique via son label.
 Une bar de recherche est dédiée à cet effet.
 
 ---
@@ -14,8 +14,9 @@ Une bar de recherche est dédiée à cet effet.
 ## 🏗️ Technologies utilisées
 
 - **React** — Framework principal
+- **TypeScript** — Pour un code mieux défini et une meilleur expérience développeur.
 - **Tailwind CSS** — Librairie pour concevoir l'interface utilisateur du site
-- **Responsive Design** - Site conçu selon la méthode "Mobile First".
+- **Responsive Design** — Site conçu selon la méthode "Mobile First".
 
 ---
 
