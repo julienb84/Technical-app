@@ -23,6 +23,7 @@
   --color-pending-400: #fdb022;
 
   --breakpoint-largephone: 30rem;
+  --breakpoint-xtra: 110rem;
 }
 
 @layer base {
@@ -44,11 +45,10 @@
   }
 }
 @utility wrapper1 {
-  max-width: 360px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 @utility wrapper2 {
-  max-width: 100dvw;
-  padding: 0 10px;
+  max-width: 1260px;
+  margin: 0 auto;
 }

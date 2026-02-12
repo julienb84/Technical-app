@@ -66,9 +66,9 @@ const TransactionsPage = () => {
   }, [transactionsData, debouncedSearch]);
 
   return (
-    <div className="min-h-[calc(100dvh-56px)] flex flex-col relative items-center gap-5 pt-10">
+    <div className="min-h-[calc(100dvh-136px)] flex flex-col relative items-center gap-5 pt-10 largephone:min-h-[calc(100dvh-176px)] md:gap-7 lg:gap-10">
       <div className="font-bold">
-        <h1 className="text-xl text-brand-800 largephone:text-2xl">
+        <h1 className="text-xl text-brand-800 largephone:text-2xl md:text-3xl lg:text-[32px]">
           Lydia{" "}
           <span className="text-brand-500 tracking-wide">payment history</span>
         </h1>

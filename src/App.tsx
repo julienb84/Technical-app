@@ -1,15 +1,13 @@
 import Header from "./components/Header";
 import TransactionsPage from "./components/TransactionPage";
-
-import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Header />
       <TransactionsPage />
+      <Footer />
     </>
   );
 }
