@@ -1,11 +1,11 @@
 interface BadgeProps {
-  variant: "completed" | "canceled" | "pending"; // Badge type
-  status: string; // Status of the badge
-  className?: string; // Additional className
+  variant: "completed" | "canceled" | "pending";
+  status: string;
+  className?: string;
 }
 
 const Badge: React.FC<BadgeProps> = ({ variant, status, className }) => {
-  // Tailwind classes for each variant
+  // Classes Tailwind pour chaque état "variant" du badge
   const variantClasses = {
     completed: {
       container: "bg-completed-500/70 border-completed-600 text-white",
