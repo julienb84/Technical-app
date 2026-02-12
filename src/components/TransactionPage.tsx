@@ -14,9 +14,9 @@ import transactionsTab from "../data/transactions.json";
 import type { Transaction } from "../types/transaction";
 
 const TransactionsPage = () => {
-  const [search, setSearch] = useState("");
+  const transactionsData = transactionsTab as Transaction[];
 
-  const typedTransactions = transactionsTab as Transaction[];
+  const [search, setSearch] = useState("");
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value: string = event.target.value;
@@ -32,7 +32,7 @@ const TransactionsPage = () => {
       </div>
       <section className="sticky w-80 top-0">
         <div className="relative">
-          <FiSearch className="absolute top-2 left-2.5" />
+          <FiSearch className="absolute top-2.5 left-2.5" />
           <Input
             type="text"
             placeholder="Search payment..."
@@ -44,7 +44,7 @@ const TransactionsPage = () => {
         </div>
       </section>
       <section className="w-dvw pl-3 pr-3">
-        <TransactionsDetails data={typedTransactions} search={search} />
+        <TransactionsDetails data={transactionsData} search={search} />
       </section>
     </div>
   );
