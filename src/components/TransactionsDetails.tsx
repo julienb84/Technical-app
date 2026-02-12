@@ -13,7 +13,7 @@ const TransactionsDetails = ({ data }: Props) => {
   const results = Object.keys(data).length;
 
   return (
-    <div className="flex flex-col mt-5">
+    <div className="flex flex-col mt-5 largephone:mt-10">
       {results === 0 && (
         <div className="flex justify-center text-xl text-brand-800/60 font-bold italic tracking-wider">
           <p>No payment found...</p>
@@ -39,18 +39,20 @@ const TransactionsDetails = ({ data }: Props) => {
         return (
           <div key={dateDay} className="mb-6">
             {" "}
-            <p className="text-brand-800 mb-2.5">{formattedDate}</p>
-            <section className="rounded-xl flex flex-col gap-4 pt-4 pb-4 bg-brand-500/85 pl-2.5 pr-2.5">
+            <div className="pl-3 largephone:pl-8 sm:pl-10">
+              <p className="text-brand-800 mb-2.5">{formattedDate}</p>
+            </div>
+            <section className="rounded-xl flex flex-col gap-4 pt-6 pb-6 bg-brand-500/85 pl-2.5 pr-2.5 largephone:pl-8 largephone:pr-8 sm:pl-10 sm:pr-10 sm:gap-6">
               {transactions.map((transaction) => {
                 return (
                   <details
                     key={transaction.paymentId}
-                    className="group max-w-full bg-white border border-transparent open:border-brand-800/50 open:bg-white open:shadow-md open:duration-500 p-2.5 rounded-xl not-open:hover:shadow-lg/20"
+                    className="group max-w-full bg-white border border-transparent open:border-brand-800/70 open:bg-white open:shadow-xl/20 open:duration-500 pt-2.5 pb-2.5 pl-2 pr-2 rounded-xl not-open:hover:shadow-lg/20 sm:p-5"
                   >
-                    <summary className="text-brand-800 text-[17px] flex items-center">
+                    <summary className="text-brand-800 text-[18px] flex items-center">
                       <FaChevronRight className="group-open:rotate-90 transition duration-100" />
                       <div className="w-full flex justify-between">
-                        <span className="ml-1 line-clamp-1 max-w-48">
+                        <span className="ml-1 line-clamp-1 max-w-48 sm:max-w-80">
                           {transaction.label}
                         </span>
                         <span>{transaction.amount}</span>

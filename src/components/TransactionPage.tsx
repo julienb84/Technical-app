@@ -68,25 +68,25 @@ const TransactionsPage = () => {
   return (
     <div className="min-h-[calc(100dvh-56px)] flex flex-col relative items-center gap-5 pt-10">
       <div className="font-bold">
-        <h1 className="text-xl text-brand-800">
+        <h1 className="text-xl text-brand-800 largephone:text-2xl">
           Lydia{" "}
           <span className="text-brand-500 tracking-wide">payment history</span>
         </h1>
       </div>
-      <section className="sticky w-80 top-0">
+      <section className="sticky w-80 top-0 largephone:w-md sm:w-140">
         <div className="relative">
-          <FiSearch className="absolute top-2.5 left-2.5" />
+          <FiSearch className="absolute top-2.5 left-2.5 text-brand-800" />
           <Input
             type="text"
             placeholder="Search payment..."
             name="search"
             value={search}
             onChange={handleSearch}
-            className="bg-brand-100 pl-8.5"
+            className="bg-brand-100 pl-8.5 text-brand-800"
           />
         </div>
         {results > 0 && search.length > 0 ? (
-          <div className="absolute top-9.5 left-34">
+          <div className="absolute top-2 right-1 text-[14px] text-brand-800/50 font-semibold tracking-tight">
             {results === 1 ? (
               <p>{`${results} result`}</p>
             ) : (
@@ -97,7 +97,7 @@ const TransactionsPage = () => {
           <></>
         )}
       </section>
-      <section className="w-dvw pl-3 pr-3">
+      <section className="w-dvw">
         <TransactionsDetails data={filteredTransactionsData} />
       </section>
     </div>

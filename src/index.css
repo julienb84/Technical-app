@@ -21,6 +21,8 @@
   --color-completed-700: #027a48;
   --color-pending-300: #fec84b;
   --color-pending-400: #fdb022;
+
+  --breakpoint-largephone: 30rem;
 }
 
 @layer base {
