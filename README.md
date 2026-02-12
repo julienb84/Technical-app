@@ -13,9 +13,9 @@ Une bar de recherche est dédiée à cet effet.
 
 ## 🏗️ Technologies utilisées
 
-- **React** — Framework principal
+- **React** — Framework principal.
 - **TypeScript** — Pour un code mieux défini et une meilleur expérience développeur.
-- **Tailwind CSS** — Librairie pour concevoir l'interface utilisateur du site
+- **Tailwind CSS** — Librairie pour concevoir l'interface utilisateur du site.
 - **Responsive Design** — Site conçu selon la méthode "Mobile First".
 
 ---
