@@ -1,6 +1,6 @@
 # ⚙️ Test technique ⚙️
 
-Projet déployé sur [Netlify](https://www.netlify.com/) et consultable à l'adresse :
+Projet déployé sur [Netlify](https://www.netlify.com/) et consultable à l'adresse : https://nimble-tulumba-f6ed94.netlify.app/
 
 ---
 
