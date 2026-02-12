@@ -15,7 +15,7 @@ Une bar de recherche est dédiée à cet effet.
 
 - **React** — Framework principal.
 - **TypeScript** — Pour un code mieux défini et une meilleur expérience développeur.
-- **Tailwind CSS** — Librairie pour concevoir l'interface utilisateur du site.
+- **Tailwind CSS** — Librairie servant à concevoir l'interface utilisateur du site.
 - **Responsive Design** — Site conçu selon la méthode "Mobile First".
 
 ---
