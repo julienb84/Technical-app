@@ -1,6 +1,6 @@
 # ⚙️ Test technique ⚙️
 
-Projet déployé sur [Netlify](https://www.netlify.com/) et consultable à l'adresse : https://nimble-tulumba-f6ed94.netlify.app/
+Mise en pratique de TypeScript avec une application Front-end.
 
 ---
 
@@ -63,5 +63,4 @@ Ce projet est un test technique. Il n’est pas destiné à un usage commercial.
 ## 📡 Contact
 
 - Julien Bouchez : julienbouchez@icloud.com
-- Profile GitHub : [@JulienBCHZ](https://github.com/JulienBCHZ)
 - Profile LinkedIn : [@JulienBouchez](https://www.linkedin.com/in/julien-bouchez-developer/)

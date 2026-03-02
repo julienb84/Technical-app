@@ -32,6 +32,7 @@ const TransactionsDetails = ({ data }: Props) => {
             month: "long",
             year: "numeric",
             hour: "numeric",
+            
             minute: "numeric",
             second: "numeric",
           },
