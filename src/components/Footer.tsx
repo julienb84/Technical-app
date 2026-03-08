@@ -17,7 +17,7 @@ export default function Footer() {
         <span className="font-semibold text-brand-800/80">Julien Bouchez</span>
         <div className="flex gap-1.5">
           <a
-            href="https://github.com/JulienBCHZ"
+            href="https://github.com/julienb84"
             target="_blank"
             className="text-brand-800 text-[20px] md:text-2xl"
           >
