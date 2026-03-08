@@ -63,5 +63,5 @@ Ce projet est un test technique. Il n’est pas destiné à un usage commercial.
 ## 📡 Contact
 
 - Julien Bouchez : julienbouchez@icloud.com
-- Profile GitHub : [@JulienBCHZ](https://github.com/julienb84)
+- Profile GitHub : [@JulienBouchez](https://github.com/julienb84)
 - Profile LinkedIn : [@JulienBouchez](https://www.linkedin.com/in/julien-bouchez-developer/)
