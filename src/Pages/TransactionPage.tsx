@@ -1,13 +1,14 @@
 // UI //
-import Input from "./ui/Input";
+import Input from "../components/ui/Input";
 import { FiSearch } from "react-icons/fi";
 
 // PROJECT COMPONENTS & HOOKS //
-import TransactionsDetails from "./TransactionsDetails";
+import TransactionsDetails from "../components/TransactionsDetails";
 import useDebounce from "../hooks/useDebounce";
+import PageLayout from "../layouts/PageLayout";
 
 // REACT COMPONENTS & HOOKS //
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 // DATA //
 import transactionsTab from "../data/transactions.json";
@@ -25,6 +26,10 @@ const TransactionsPage = () => {
 
   const transactionsData = transactionsTab as Transaction[];
   const debouncedSearch = useDebounce(search, 600);
+
+  useEffect(() => {
+    document.title = "Payment history | My Bank";
+  }, []);
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value: string = event.target.value;
@@ -66,10 +71,10 @@ const TransactionsPage = () => {
   }, [transactionsData, debouncedSearch]);
 
   return (
-    <div className="min-h-[calc(100dvh-136px)] flex flex-col relative items-center gap-5 pt-10 largephone:min-h-[calc(100dvh-176px)] md:gap-7 lg:gap-10">
+    <PageLayout className="items-center gap-5 pt-10 md:gap-7 lg:gap-10">
       <div className="font-bold">
         <h1 className="text-xl text-brand-800 largephone:text-2xl md:text-3xl lg:text-[32px]">
-          Lydia{" "}
+          My Bank{" "}
           <span className="text-brand-500 tracking-wide">payment history</span>
         </h1>
       </div>
@@ -100,7 +105,7 @@ const TransactionsPage = () => {
       <section className="w-dvw">
         <TransactionsDetails data={filteredTransactionsData} />
       </section>
-    </div>
+    </PageLayout>
   );
 };
 

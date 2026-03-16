@@ -1,26 +1,30 @@
-interface BadgeProps {
-  variant: "completed" | "canceled" | "pending";
-  status: string;
-  className?: string;
-}
+// FRAMEWORKS COMPONENTS & HOOKS //
+import { twMerge } from "tailwind-merge";
 
-const Badge: React.FC<BadgeProps> = ({ variant, status, className }) => {
+type BadgeProps = {
+  status: "completed" | "canceled" | "pending";
+  className?: string;
+};
+
+const Badge = ({ status, className }: BadgeProps) => {
   // Classes Tailwind pour chaque état "variant" du badge
   const variantClasses = {
     completed: {
-      container: "bg-completed-500/70 border-completed-600 text-white",
+      container: "bg-completed-500/50 border-completed-600 text-completed-600",
     },
     canceled: {
-      container: "bg-canceled-500/70 border-canceled-600 text-white",
+      container: "bg-canceled-500/50 border-canceled-600 text-canceled-600",
     },
     pending: {
-      container: "bg-pending-300/90 border border-pending-400 text-night-dark",
+      container: "bg-pending-300/70 border border-pending-400 text-pending-600",
     },
   };
 
   return (
     <div
-      className={`w-32 h-8 border ${variantClasses[variant].container} font-medium rounded-2xl flex justify-center items-center ${className}`}
+      className={twMerge(
+        `w-32 h-8 border ${variantClasses[status].container} font-semibold rounded-2xl flex justify-center items-center ${className}`,
+      )}
     >
       <span>{status}</span>
     </div>

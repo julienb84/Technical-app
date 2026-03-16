@@ -1,6 +1,9 @@
+// COMPONENTS //
 import Header from "./components/Header";
-import TransactionsPage from "./components/TransactionPage";
 import Footer from "./components/Footer";
+
+// PAGES //
+import TransactionsPage from "./Pages/TransactionPage";
 
 function App() {
   return (

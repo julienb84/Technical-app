@@ -32,7 +32,7 @@ const TransactionsDetails = ({ data }: Props) => {
             month: "long",
             year: "numeric",
             hour: "numeric",
-            
+
             minute: "numeric",
             second: "numeric",
           },
@@ -122,10 +122,7 @@ const TransactionsDetails = ({ data }: Props) => {
                             </p>
                           </div>
                         </section>
-                        <Badge
-                          variant={transaction.status}
-                          status={transaction.status}
-                        />
+                        <Badge status={transaction.status} />
                         {transaction.statusErrorDisplay && (
                           <p className="text-brand-800 font-bold">
                             {transaction.statusErrorDisplay}

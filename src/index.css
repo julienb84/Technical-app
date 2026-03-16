@@ -2,6 +2,13 @@
 
 @import "tailwindcss";
 
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
 
@@ -11,7 +18,7 @@
   --color-brand-100: #f4f9ff;
   --color-brand-200: #e5f2fd;
   --color-brand-500: #0080ff;
-  --color-brand-800: #012c71;
+  --color-brand-800: #00286b;
 
   --color-canceled-500: #f04438;
   --color-canceled-600: #d92d20;
@@ -21,6 +28,8 @@
   --color-completed-700: #027a48;
   --color-pending-300: #fec84b;
   --color-pending-400: #fdb022;
+  --color-pending-500: #ee9e0a;
+  --color-pending-600: rgb(214, 141, 4);
 
   --breakpoint-largephone: 30rem;
   --breakpoint-xtra: 110rem;
@@ -33,21 +42,11 @@
   }
 }
 
-@utility text-render {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@utility link-hover {
-  &:hover {
-    cursor: pointer;
-  }
-}
 @utility wrapper1 {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 @utility wrapper2 {
   max-width: 1260px;
   margin: 0 auto;
