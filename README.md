@@ -2,6 +2,10 @@
 
 Mise en pratique de TypeScript avec une application Front-end.
 
+![Capture d'écran 1 - Historique des transactions](./public/Historic.png)
+
+![Capture d'écran 2 - Détail d'une transaction](./public/Details.png)
+
 ---
 
 ## 📌 Description
