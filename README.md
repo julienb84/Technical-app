@@ -2,16 +2,16 @@
 
 Mise en pratique de TypeScript avec une application Front-end.
 
-![Capture d'écran 1 - Historique des transactions](./public/Historic.png)
-
-![Capture d'écran 2 - Détail d'une transaction](./public/Details.png)
-
 ---
 
 ## 📌 Description
 
 Création d'une application SPA, pour Single Page Application, permettant la recherche d'une transaction spécifique via son label.
 Une bar de recherche est dédiée à cet effet.
+
+![Capture d'écran 1 - Historique des transactions](./public/Historic.png)
+
+![Capture d'écran 2 - Détail d'une transaction](./public/Details.png)
 
 ---
 
