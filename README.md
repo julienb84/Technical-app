@@ -31,7 +31,7 @@ Une bar de recherche est dédiée à cet effet.
 1. Cloner le dépôt :
 
 ```bash
-git clone https://github.com/JulienBCHZ/Technical-app.git
+git clone https://github.com/julienb84/Technical-app.git
 ```
 
 2. Installer les dépendances :
