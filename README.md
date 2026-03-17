@@ -7,7 +7,7 @@ Mise en pratique de TypeScript avec une application Front-end.
 ## 📌 Description
 
 Création d'une application SPA, pour Single Page Application, permettant la recherche d'une transaction spécifique via son label.
-Une bar de recherche est dédiée à cet effet.
+Une barre de recherche est dédiée à cet effet.
 
 ![Capture d'écran 1 - Historique des transactions](./public/Historic.png)
 
@@ -20,7 +20,7 @@ Une bar de recherche est dédiée à cet effet.
 - **React** — Framework principal.
 - **TypeScript** — Pour un code mieux défini et une meilleur expérience développeur.
 - **Tailwind CSS** — Librairie servant à concevoir l'interface utilisateur du site.
-- **Responsive Design** — Site conçu selon la méthode "Mobile First".
+- **Responsive Design** — Site conçu selon la méthode "Mobile First" et entièrement **_responsive_**.
 
 ---
 
