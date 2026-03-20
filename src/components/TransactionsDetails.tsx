@@ -1,5 +1,5 @@
 // UI //
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import Badge from "./ui/Badge";
 
 // TYPES //
@@ -57,7 +57,7 @@ const TransactionsDetails = ({ data }: Props) => {
                       className="group max-w-full bg-white border border-transparent open:border-brand-800/70 open:bg-white open:drop-shadow-xl/25 pt-2.5 pb-2.5 pl-2 pr-2 rounded-xl not-open:hover:drop-shadow-xl/25 transition-all duration-500  sm:p-5 md:pt-7 md:pb-7 lg:pt-10 lg:pb-10"
                     >
                       <summary className="text-brand-800 text-[17px] flex items-center hover:cursor-pointer hover:font-semibold hover:text-brand-800/80 duration-500 largephone:text-[18px] md:text-[22px] lg:text-2xl">
-                        <FaChevronRight className="group-open:rotate-90 transition duration-100" />
+                        <FaChevronDown className="group-open:rotate-180 transition duration-300 text-[16px] lg:text-[20px]" />
                         <div className="w-full flex justify-between">
                           <span className="ml-1 line-clamp-1 max-w-48 sm:max-w-80 md:max-w-84 lg:max-w-105">
                             {transaction.label}

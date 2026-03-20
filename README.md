@@ -1,6 +1,7 @@
 # ⚙️ Test technique ⚙️
 
 Mise en pratique de TypeScript avec une application Front-end.
+Projet déployé sur [Netlify](https://www.netlify.com/) et consultable à l'adresse : https://superlative-alpaca-5fe2a1.netlify.app/
 
 ---
 
